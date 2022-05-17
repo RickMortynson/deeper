@@ -2,7 +2,34 @@
 @tailwind utilities;
 @tailwind components;
 
+@layer base {
+  .auto-skin,
+  .light-skin,
+  .dark-skin {
+    --color-bg-accent: #1e89f3;
+  }
 
+  .auto-skin,
+  .light-skin {
+    --color-bg-base: #f1f5f9;
+    --color-bg-invert: #1f2937;
+    --color-bg-input: #fff;
+
+    --color-text-base: #1f2937;
+    --color-text-invert: #f1f5f9;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .auto-skin {
+      --color-bg-base: #1f2937;
+      --color-bg-invert: #f1f5f9;
+      --color-bg-input: #000;
+
+      --color-text-base: #f1f5f9;
+      --color-text-invert: #1f2937;
+    }
+  }
+}
 
 body {
   margin: 0;

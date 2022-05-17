@@ -5,12 +5,15 @@ module.exports = {
       backgroundColor: {
         skin: {
           base: 'var(--color-bg-base)',
-          invert: 'var(--color-bg-invert)'
+          invert: 'var(--color-bg-invert)',
+          input: 'var(--color-bg-input)',
+          accent: 'var(--color-bg-accent)'
         }
       },
       textColor: {
         skin: {
-          base: 'var(--color-text-base)'
+          base: 'var(--color-text-base)',
+          invert: 'var(--color-text-invert)'
         }
       }
     },

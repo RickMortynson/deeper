@@ -15,15 +15,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
-    "jsx": "react-jsx",
-    "baseUrl": "./",
-    "paths": {
-      "@/types/*": ["./src/types/*"],
-      "@/images/*": ["./src/images/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/*": ["./src/*"]
-    }
+    "jsx": "react-jsx"
   },
   "include": ["src"],
+  "extends": "./tsconfig.paths.json",
   "references": [{ "path": "./tsconfig.node.json" }]
 }
