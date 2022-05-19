@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "cd .. && husky install"
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -24,6 +25,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "husky": "^8.0.1",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.11",
