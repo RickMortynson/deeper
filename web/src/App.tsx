@@ -9,6 +9,7 @@ const App = () => {
       <SearchBar updateUrlList={setUrlList} 
       
       
+      
       className='' />
       {urlList.length > 0 && (
         <pre className='text-skin-base'>{JSON.stringify(urlList, null, 2)}</pre>
