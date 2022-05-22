@@ -3,10 +3,15 @@ package client
 import (
 	"io"
 	"net/http"
+	"strings"
 )
 
 func MakeRequest(url string) (string, error) {
 	client := &http.Client{}
+
+	if !(strings.HasPrefix(url, "http://") || strings.HasPrefix(url, "https://")) {
+		url = "http://" + url
+	}
 
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
